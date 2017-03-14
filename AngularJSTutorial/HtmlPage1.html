@@ -4,12 +4,15 @@
     <script src="Scripts/angular.min.js"></script>
     <script src="Scripts/Scripts.js"></script>
 </head>
-<body>
+<body ng-controller="myController" >
     <div>
-        {{ 'Balarama' + '\r Raju' + '\r says'}}
+        Country : {{ country.name }}
     </div>
-    <div ng-controller="myController">
-        {{ message }}
+    <div>
+        Capital : {{ country.capital }}
+    </div>
+    <div>
+        <img ng-src="{{ country.flag}}" alt="{{ country.name + 'Flag' }}" style="height:400px;width:300px" />
     </div>
 </body>
 </html>
